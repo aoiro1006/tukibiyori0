@@ -1,0 +1,172 @@
+a{
+    text-decoration: none;
+}
+
+#headerHeader{
+    background-color: black;
+    position: relative;
+    height: 14vh;
+    display: flex;
+    z-index: -2;
+    overflow: hidden;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+#mainVisual{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative; 
+    z-index: -1; 
+}
+
+#header-logo-box{
+    position: absolute;
+    left: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    top: 25px;
+    margin-left: 30px;
+}
+
+#header-logo{
+    width: 90px;
+}
+#header-logo-text{
+    width: 90px;
+    margin-left: 30px;
+    margin-top:15px;
+}
+
+#header-copy-box{
+    margin-left: 10%;
+    margin-top: 60px;
+    position: absolute;
+    display: flex;
+}
+
+#header-copy-box h1:first-child{
+        margin-top: 90px;
+}
+
+#header-copy-box h1{
+    color: #fff;
+    writing-mode: vertical-rl;
+    margin-top: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.8rem;
+    font-size: 27px;
+}
+
+#header-menuDiv{
+    right: 10%;
+}
+
+#header-menu{
+    position: absolute;
+    display: flex;
+    right: 20%;
+    bottom: 45%;
+    
+}
+
+#header-menu2{
+    position: absolute;
+    right: 15%;
+    width: 30px;
+    top: 640%;
+    display: none;
+}
+
+#btn{
+    width: 60px;
+}
+
+#btn:hover{
+    cursor: pointer;
+}
+
+#header-menu a{
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+.header-onlineShop{
+    border: #fff solid 1px;
+    position: absolute;
+    right: 5%;
+    padding: 1vw;
+    bottom: 35%;
+}
+.header-onlineShop a{
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    font-size: 1vw;
+
+}
+
+#sideMenu{
+    position: absolute;
+    height: 400%;
+    width: 100%;
+    bottom: -1000%;
+    background-color: black;
+    z-index: 70;
+    transition: 0.2s;
+}
+
+#sidenav{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#sidenav a{
+    color: #fff;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px){
+    #header-menuDiv{
+        display: none;
+    }
+    
+    
+    #header-menu2{
+        display: block;
+        position: absolute;
+        z-index: 70;
+    }
+    
+
+    
+}

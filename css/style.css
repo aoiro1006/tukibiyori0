@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+
+/* リンクの装飾を全てのリンクに適用 */
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0; /* ボディのマージンをリセット */
+    font-family: "Noto Serif JP", serif; /* デフォルトのフォントファミリーを設定 */
+    position: relative;
+}
+
+header {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center; /* 中央寄せ */
+    justify-content: center; /* 中央寄せ */
+    overflow: hidden;
+    width: 100%;
+    background-color: #000;
+    z-index: 0;
+}
+
+#header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* メニューが上に表示されるように修正 */
+    background-color: #000;
+}
+
+#header-space {
+    height: 200px; /* ヘッダーのスペースを追加 */
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+#main {
+    z-index: 10;
+}
+
+#mainVisual {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index: -1; /* メインビジュアルを後ろに配置 */
+}
+
+#logo-box {
+    position: absolute;
+    right: 15%;
+    top: 40px; /* ロゴのマージンを修正 */
+    z-index: 20; /* ロゴを前面に表示 */
+}
+
+#logo {
+    width: 180px;
+}
+
+#copy-box {
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 60px;
+    z-index: 20;
+}
+
+#copy-box h1 {
+    color: #fff;
+    writing-mode: vertical-rl;
+    font-weight: 300;
+    font-size: 27px;
+    letter-spacing: 0.8rem;
+    margin-top: 20px;
+}
+
+#copy-box h1:first-child {
+    margin-top: 90px;
+}
+
+
+#menuDiv {
+    position: absolute;
+    right: 10%;
+    bottom: 100px;
+    z-index: 30; /* メニューを前面に表示 */
+}
+
+#menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#menu a {
+    color: #fff;
+    writing-mode: vertical-rl;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    margin-left: 16px;
+}
+
+.onlineShop {
+    border: #fff solid 1px;
+    margin-left: 20px;
+}
+
+#menu .onlineShop a {
+    color: #fff;
+    writing-mode: vertical-rl;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin: 10px;
+}
+
+
+.subtitle{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    font-size: 27px;
+}
+
+.news{
+    text-align: center;
+    margin: auto;
+}
+
+.news-Box{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.news-Box ul:first-child{
+    border-top: #000 solid 1px;
+}
+
+.news-Box ul{
+    border-bottom: #000 solid 1px;
+    margin:0 auto;
+    width: 80%;
+}
+
+.news-Box ul li{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.newsdate{
+    display: flex;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.category{
+    margin-right: 30px;
+    font-size: 14px;
+    color: #886842;
+    width: 120px;
+    text-align: left;
+}
+
+.date{
+    margin-right: 50px;
+    font-size: 14px;
+    align-items: center;
+    color: #886842;
+}
+
+.text{
+    font-size: 17px;
+text-align: left;
+
+}
+
+.about{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about-text{
+    margin-top: 80px;
+    line-height: 3rem;
+}
+
+
+
+#aboutVisual img{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#buttonBox{
+    margin: 80px 0px;
+    display: flex;
+}
+
+.button{
+    width: 25%;
+    height: 200px;
+    background-color: #000;
+    position: relative;
+}
+
+.button img{
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button p{
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    width: 100%;
+}
+
+#footer{
+    background-color: #886841;
+    color: #fff;
+    display: flex;
+    height: 200px;
+    padding: 10px 0px 40px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_logo{
+    margin-left: 5%;
+}
+
+.footer_logo img{
+    width: 100px;
+}
+
+.info{
+    margin-left: 2%;
+    width: 50%;
+    text-align: left;
+}
+
+.info ul{
+    display: flex;
+}
+
+
+
+.info ul li{
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.sitemap{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.sitemap a{
+    color: #fff;
+    font-size: 15px;
+}
+
+.sitemap a:first-child{
+    margin-bottom: 50px;
+}
+
+@media (max-width: 600px){
+
+
+#copy-box h1{
+        font-size: 4vw;
+    }
+
+#logo-box img{
+    width: 30vw;
+}
+
+#menu{
+    right: 5%;
+}
+
+#menu a{
+    font-size: 3vw;
+}
+
+.onlineShop{
+    right: 98%;
+}
+
+
+
+.text{
+    font-size: 2vw;
+}
+
+#footer{
+height: auto;
+flex-direction: column;
+}
+
+.footer_logo{
+    margin-left: 0px;
+}
+
+
+.info{
+    margin-left: 0px;
+    width: 90%;
+    text-align: center;
+}
+
+.info ul{
+    flex-direction: column;
+}
+
+
+
+.sitemap{
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 0px;
+
+}
+
+.sitemap a{
+    margin-right: 0;
+}
+
+.sitemap a:first-child{
+    margin-bottom: 20px;
+}
+
+
+
+
+}
